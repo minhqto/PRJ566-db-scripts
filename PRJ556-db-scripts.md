@@ -19,7 +19,7 @@ Tables:
 
 Artur
 
-- dog
+- dog (this tables requires a function to return the role ID from the user table. This is used for a CHECK constraint in the dog table to ensure that only users a client roleID can add a dog)
 - user
 - role
 
