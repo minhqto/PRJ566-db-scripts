@@ -16,7 +16,6 @@
 ERD: Viet & Minh
 
 Tables:
-
 Artur
 
 - dog (this tables requires a function to return the role ID from the user table. This is used for a CHECK constraint in the dog table to ensure that only users a client roleID can add a dog)
@@ -25,14 +24,14 @@ Artur
 
 Jihyun
 
-- service
+- service (this table needs to check that the user ID's role ID is a valid specialist role ID)
 - serviceType
 - booking
 
 Minh
 
 - bookingStatus
-- Review
+- Review (This table needs to check that the client ID and the specialist ID do not match, and check that the roleID of client is valid, and check that roleID of specialist is valid)
 - BookingMessage
 
 ## Creation - Minh
