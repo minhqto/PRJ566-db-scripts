@@ -15,8 +15,6 @@
 
 ERD: Viet & Minh
 
-Tables:
-
 ## Minh
 
 ## 1. Creation
@@ -68,6 +66,29 @@ Tables:
             REFERENCES User(user_id)
             ON DELETE CASCADE
     );
+
+
+
+```
+
+## 2. Deletion
+
+```
+DROP TABLE BookingStatus;
+DROP TABLE Review;
+DROP TABLE BookingMessage;
+DROP TABLE SpecialistProfile;
+```
+
+## 3. Population
+
+```
+
+```
+
+## 4. Selection
+
+```
 
 ```
 
