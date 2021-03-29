@@ -66,11 +66,11 @@
     );
 
     CREATE TABLE SpecialistProfile(
-        profile_id INTEGER,
-        user_id INTEGER,
-        description VARCHAR(255),
-        status BOOLEAN,
-        radius DOUBLE,
+        profile_id INTEGER NOT NULL,
+        user_id INTEGER NOT NULL,
+        description VARCHAR(255) NOT NULL,
+        status BOOLEAN NOT NULL,
+        radius DOUBLE NOT NULL,
         availability VARCHAR(255),
         CONSTRAINT specialist_pk PRIMARY KEY(profile_id),
         CONSTRAINT user_fk
