@@ -103,10 +103,10 @@ Minh
 ## 2. Deletion
 
 ```
-DROP TABLE role;
 DROP TABLE user;
-DROP TABLE dog;
 DROP TABLE address;
+DROP TABLE dog;
+DROP TABLE role;
 ```
 
 ## 3. Population
