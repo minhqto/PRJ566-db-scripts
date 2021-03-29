@@ -59,7 +59,6 @@ Minh
         CONSTRAINT dog_user_fk
             FOREIGN KEY (user_id)
             REFERENCES users (user_id)
-        ON DELETE CASCADE
     );
     
     CREATE TABLE users(
@@ -77,7 +76,6 @@ Minh
         CONSTRAINT role_fk
             FOREIGN KEY (role_id)
             REFERENCES role (role_id)
-        ON DELETE CASCADE
     );
 
     CREATE TABLE role (
@@ -91,14 +89,13 @@ Minh
         user_id INTEGER NOT NULL,
         street VARCHAR(30) NOT NULL,
         city VARCHAR(30) NOT NULL,
-        province VARCHAR(30) NOT NULL,
-        postal_code VARCHAR(6) NOT NULL,
+        province VARCHAR(20) NOT NULL,
+        postal_code VARCHAR(7) NOT NULL,
         country VARCHAR(60) NOT NULL,
         CONSTRAINT address_pk PRIMARY KEY (address_id),
         CONSTRAINT address_user_fk
             FOREIGN KEY (user_id)
             REFERENCES users (user_id),
-        ON DELETE CASCADE
     );
 
 ```
