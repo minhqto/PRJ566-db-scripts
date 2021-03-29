@@ -169,10 +169,10 @@ DROP TABLE SpecialistProfile;
 ## 2. Deletion
 
 ```
-DROP TABLE Role;
 DROP TABLE User;
 DROP TABLE Dog;
 DROP TABLE Address;
+DROP TABLE Role;
 ```
 
 ## 3. Population
