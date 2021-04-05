@@ -40,5 +40,23 @@ INSERT INTO SpecialistProfile(user_id, description, status, radius, availability
 /* 9. Address */
 INSERT INTO Address(user_id, street, city, province, postal_code, country) VALUES(1, '31 Danesbury', 'Brampton', 'ON', 'L6T1T2', 'Canada');
 
-    
+/* 8. BookingStatus */ 
 
+INSERT INTO BookingStatus VALUES(‘1’, ‘Confirmed’); 
+INSERT INTO BookingStatus VALUES(‘2’, ‘Pending’); 
+INSERT INTO BookingStatus VALUES(‘3’, ‘Declined’); 
+INSERT INTO BookingStatus VALUES(‘4’, ‘Cancelled’); 
+
+/* 9. Review */ 
+
+NO DATA NEEDED 
+
+/* 10. BookingMessage */ 
+
+NO DATA NEEDED 
+
+/* 11. SpecialistProfile */
+INSERT INTO SpecialistProfile(user_id, description, status, radius, availability) VALUES(1, 'I am the best specialist in Toronto', false, 50.5, 'I am available on the weekend');
+
+/* 12. Address */
+INSERT INTO Address(user_id, street, city, province, postal_code, country) VALUES(1, '31 Danesbury', 'Brampton', 'ON', 'L6T1T2', 'Canada');
