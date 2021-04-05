@@ -1,0 +1,35 @@
+/* 1. Dog */
+NO DATA NEEDED
+
+/* 2. Users */
+NO DATA NEEDED
+
+/* 3. Role */
+INSERT INTO Role VALUES('Specialist');
+INSERT INTO Role VALUES('Client');
+
+
+
+/* 5. ServiceType */
+INSERT INTO ServiceType VALUES('10', 'Training');
+INSERT INTO ServiceType VALUES('20', 'Grooming');
+INSERT INTO ServiceType VALUES('30', 'Therapy');
+INSERT INTO ServiceType VALUES('40', 'Pet food');
+
+/* 6. Service */
+INSERT INTO Service VALUES('1', 'Leash training', '70', '3 hours', '10');
+INSERT INTO Service VALUES('2', 'Barking', '50', '2 hours', '10');
+INSERT INTO Service VALUES('3', 'Puppy Training', '70', '3 hours', '10');
+INSERT INTO Service VALUES('4', 'Separation anxiety', '90', '4 hours', '10');
+INSERT INTO Service VALUES('5', 'Bathing-S', '20', 'For small dogs and cats', '20');
+INSERT INTO Service VALUES('6', 'Bathing-ML', '30', 'For Medium/Large dogs and cats', '20');
+INSERT INTO Service VALUES('7', 'Clipping-S', '40', 'For under 25 lbs', '20');
+INSERT INTO Service VALUES('8', 'Clipping-M', '50', 'For 26-49 lbs', '20');
+INSERT INTO Service VALUES('9', 'Laser Therapy', '100', '3 sessions(10mins) Package', '30');
+INSERT INTO Service VALUES('10', 'Laser Therapy', '150', '5 sessions(10mins) Package', '30');
+INSERT INTO Service VALUES('11', 'Puppy Training', '70', '3 hours', '40');
+INSERT INTO Service VALUES('12', 'Separation anxiety', '90', '4 hours', '40');
+
+/* 7. Booking */
+INSERT INTO Booking VALUES('1', '1', '1', '1', '2', '2021-05-21 11:00:00');
+INSERT INTO Booking VALUES('2', '1', '5', '2', '1', '2021-05-21 11:00:00');
