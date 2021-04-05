@@ -96,8 +96,8 @@ DROP TABLE SpecialistProfile;
         dog_breed VARCHAR(50) NOT NULL,
         dog_weight INTEGER NOT NULL,
         dog_age INTEGER NOT NULL,
-        has_bite_history BOOLEAN,
-        is_vaccinated BOOLEAN,
+        has_bite_history CHAR(1) NOT NULL,
+        is_vaccinated CHAR(1) NOT NULL,
         CONSTRAINT dog_pk PRIMARY KEY(dog_id),
         CONSTRAINT dog_user_fk
             FOREIGN KEY (user_id)
@@ -200,7 +200,7 @@ CREATE TABLE Booking (
         profile_id INTEGER NOT NULL,
         user_id INTEGER NOT NULL,
         description VARCHAR(255) NOT NULL,
-        status BOOLEAN NOT NULL,
+        status CHAR(1) NOT NULL,
         radius DOUBLE NOT NULL,
         availability VARCHAR(255),
         CONSTRAINT specialist_pk PRIMARY KEY(profile_id),
