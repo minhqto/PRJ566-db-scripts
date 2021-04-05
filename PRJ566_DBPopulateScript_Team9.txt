@@ -33,3 +33,12 @@ INSERT INTO Service VALUES('12', 'Separation anxiety', '90', '4 hours', '40');
 /* 7. Booking */
 INSERT INTO Booking VALUES('1', '1', '1', '1', '2', '2021-05-21 11:00:00');
 INSERT INTO Booking VALUES('2', '1', '5', '2', '1', '2021-05-21 11:00:00');
+
+/* 8. SpecialistProfile */
+INSERT INTO SpecialistProfile(user_id, description, status, radius, availability) VALUES(1, 'I am the best specialist in Toronto', false, 50.5, 'I am available on the weekend');
+
+/* 9. Address */
+INSERT INTO Address(user_id, street, city, province, postal_code, country) VALUES(1, '31 Danesbury', 'Brampton', 'ON', 'L6T1T2', 'Canada');
+
+    
+
